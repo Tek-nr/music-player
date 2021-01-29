@@ -1,13 +1,4 @@
 
-/*
-    -Yazılan programda bağlı liste veri yapısı kullanılarak hafızanın dinamik kullanılması amaçlanmış olup komut sayısının 
-     sınırlandırılabilirliğinin önüne geçilmiştir. 
-    -Bu yapıya göre; yeni bir şarkı ekleneceği zaman pointerlar yardımı ile hafızada yeni bir düğüm oluşturulup 
-     şarkı silineceği zaman şarkının hafızada bulunduğu kısım silinerek ve gereksiz bellek kulanımından kaçınılmıştır. 
-    -Belirtilen tüm istemler gerekli fonksiyonlar içerisinde tanımlanmış olup gerekli kısımlarda main fonksiyon 
-     içerisinde çağırılmıştır.
-
-*/
 
 
 #pragma warning(disable:4996)
