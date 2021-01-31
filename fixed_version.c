@@ -9,8 +9,8 @@ struct Node {
 	struct Node* next;
 };
 
-struct Node* head = NULL; //beginning of the list
-struct Node* tail = NULL; //end of the list
+struct Node* head = NULL; 
+struct Node* tail = NULL; 
 struct Node* currentSong = &head;
 
 struct Node* NewNode(char name[51]) {
