@@ -10,14 +10,13 @@ struct node
     struct node* next;
 };
 
-struct node* head = NULL; //Listenin basini tutar
-struct node* tail = NULL; //Listenin sonunu tutar
-struct node* last= &head; //Son sarkiyi tutar
-
+struct node* head = NULL; 
+struct node* tail = NULL; 
+struct node* last= &head; 
 
 void InsertSong(char place, char SongName[51]) {
 
-    if (head == NULL) { //ilk elemani ekleme
+    if (head == NULL) { 
         head = (struct node*)malloc(sizeof(struct node));
         strcpy(head->songName, SongName);
         tail = head;
@@ -48,7 +47,7 @@ void RemoveSong(char SongName[51]) {
     struct node* new_head = (struct node*)malloc(sizeof(struct node));
     tmp = head;
 
-    if (head == tail) { //"Silinecek olan tek dugum mu?" Kontrolu
+    if (head == tail) { 
         head = NULL;
         return;
     }
@@ -58,7 +57,7 @@ void RemoveSong(char SongName[51]) {
         return;
     }
 
-    if (head != NULL && (strcmp(tmp->songName, SongName) == 0)) { //"Silinecek olan ilk dugum mu?" Kontrolu
+    if (head != NULL && (strcmp(tmp->songName, SongName) == 0)) { 
         new_head = tmp->next;
         free(head);
         head = new_head;
@@ -75,7 +74,7 @@ void RemoveSong(char SongName[51]) {
     }
 }
 
-void printPlaylist() //F -> bastan sona, R -> sondan basa
+void printPlaylist() 
 {
     struct node* tmp = (struct node*)malloc(sizeof(struct node));
     tmp = head;
